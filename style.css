@@ -6,6 +6,66 @@
 
 body {
   height: 100vh;
-  background-color: f1faee;
+  background-color: #f1faee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.calculator {
+  height: 500px;
+  width: 300px;
+  box-shadow: 4px 4px 30px rgba(0,0,0,0.3);
+  border-radius: 12px;
+  background-color: #264653;
+  overflow: hidden;
+}
+
+form input {
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-radius: 12px;
+  font-size: 32px;
+  padding: 16px;
+  background-color: black;
+  color: white;
+  text-align: right;
+  pointer-events: none;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+button {
+  flex: 0 0 22%;
+  margin: 5px 0;
+  border: 1px solid #264653;
+  width: 60px;
+  height: 52px;
+  font-size: 22px;
+  font-weight: 600px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-operator {
+  background-color: #e9c46a;
+  color: #fff;
+}
+
+.btn-numbers {
+  background-color: #f1faee;
+}
+
+.btn-equals {
+  background-color: #2a9d8f;
+}
+
+.btn-clear {
+  background-color: #e76f51;
+}
